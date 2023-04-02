@@ -1,4 +1,4 @@
-# Comparison of tariffs of mobile operators
+# Comparison of mobile operators tariffs 
 
 The program accepts the filter values selected by the user and
 offers a list of rates with a small spread of values to increase 
