@@ -10,7 +10,7 @@ Each line with the proposed tariff shows additional options (if any) and a link 
 * Python
 * Flask
 * SQLAlchemy
-* база данных SQLite.
+* DB SQLite.
 
 ## Installation
 
