@@ -1,3 +1,49 @@
+# Comparison of tariffs of mobile operators
+
+The program accepts the filter values selected by the user and
+offers a list of rates with a small spread of values to increase 
+options. 
+Each line with the proposed tariff shows additional options (if any) and a link to the page of the operator.
+
+## Technology stack in use
+
+* Python
+* Flask
+* SQLAlchemy
+* база данных SQLite.
+
+## Installation
+
+Download the project from github:
+
+```
+git clone https://github.com/theoneman44/operator_comparing
+```
+
+Create the virtual environment you need for your system and install the dependencies:
+
+```
+pip install -r requirments.txt
+```
+
+Create a config.py file and set the base variables in it:
+
+```
+basedir = os.path.abspath(os.path.dirname(__file__))
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, '..', 'tarifs.db')
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+UPLOAD_FOLDER = './images'
+SECRET_KEY = "Ваш ключ"
+```
+
+## Run the program
+
+To run the program, run the `run` command from the directory where the downloaded program is located.
+
+### P.S.
+For the correct work of the program the database file `tarifs.db` filled according to the parameters of the models is required. 
+At the moment the automatic filling of the database is in development.
+
 # Сравнение тарифов мобильных операторов
 
 Программа принимает значения фильтра выбранные пользователем и
